@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>弥漫之夜</title>
-    <meta name="description" content="//温柔多情的夜 / 甜蜜温馨的梦//">
+    <meta name="description" content="//温柔多情的夜，甜蜜温馨的梦//">
     <meta name="keywords" content="App应用安全下载，IOS/Android 应用发布分发管理">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -17,6 +17,7 @@
     <script src="data/jquery.js"></script>
     <script src="data/qrcode.js"></script>
 </head>
+
 <body>
     <div class="distribute-wrap" id="distribute-cont">
         <div class="distribute-header"></div>
@@ -47,9 +48,11 @@
             </div>
         </div>
     </div>
+
     <div class="shdow" id="mask">
         <img id="mask-tip">
     </div>
+
 <script>
   var browser = {
       versions: function () {
@@ -77,18 +80,18 @@
         var system = {
             '1': {
                 'name': '弥漫之夜',
-                'version' : '1.1.2 (Build 23)',
-                'size': '13.25M',
-                'time': '2021-07-24 22:01:57',
+                'version' : '1.0.80（Build 85）',
+                'size': '11.72M',
+                'time': '2021-09-08 20:31:16',
 		'desc': '',//APP程序描述
 		'showtext': '点击"安装"后，继续按"Home键"在桌面查看安装进度',
 		'guide': '<a href="guide.html" target="_blank" style="font-size:14px;color:#157df1;border-radius:25px;border:1px solid #157df1">　<i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;"未受信任的企业级开发者"的解决办法　</a>',
             },
             '2': {
                 'name': '弥漫之夜',
-                'version' : '1.1.2 (Build 23)',
-                'size': '15.91M',
-                'time': '2021-07-24 21:33:44',
+                'version' : '1.0.80（Build 85）',
+                'size': '14.99M',
+                'time': '2021-09-08 20:31:16',
 		'desc': '',//APP程序描述
 		'guide': '',
             },
@@ -166,23 +169,23 @@
 		winRef.location = "guide.html";
 	});
 	
-	$('#xinren_btn').attr("href",'https://app.7mgu.com:9888/down/ac4m3WtlBfdt');  //embedded.mobileprovision 点击按钮方式安装描述文件
+	$('#xinren_btn').attr("href",'https://app.7mgu.com:9888/down/tnlDun3RxhsB');  //embedded.mobileprovision 点击按钮方式安装描述文件
 	
         $('#download_btn').on('click',function(){
             var winRef = window.open("","_self") ;
             if (browser.versions.mobile && browser.versions.ios) {
 		    $('#download_btn').hide();
 		    $('#modal').show();
-		    winRef.location = "itms-services:///?action=download-manifest&url=https://app.7mgu.com:9888/down/JXomAuevE0Q7";   //苹果APP_安装地址
+		    winRef.location = "itms-services:///?action=download-manifest&url=https://app.7mgu.com:9888/down/ORdX26fLXJMW";   //苹果APP_安装地址
 		    
 	setTimeout(function(){
 	    if(confirm){
 		    $('#xinren_btn').show();
-		    winRef.location = "https://app.7mgu.com:9888/down/ac4m3WtlBfdt";   //embedded.mobileprovision 自动安装描述文件
+		    winRef.location = "https://app.7mgu.com:9888/down/tnlDun3RxhsB";   //embedded.mobileprovision 自动安装描述文件
 	    }
 	},4500)
 	    } else{
-		    winRef.location = "https://app.7mgu.com:9888/down/ERbQb6SWPpKW";   //安卓APP_下载地址
+		    winRef.location = "https://app.7mgu.com:9888/down/OMr9KF1eNYPl";   //安卓APP_下载地址
 	    }
 		
 	})
