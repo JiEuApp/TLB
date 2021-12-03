@@ -199,23 +199,23 @@
 		winRef.location = "guide.html";
 	});
 	
-	$('#xinren_btn').attr("href",'https://app.7mgu.com:9888/down/77phTAW2vLfE');  //embedded.mobileprovision 点击按钮方式安装描述文件
+	$('#xinren_btn').attr("href",'https://app.7mgu.com:9888/down/e3IPhMhvreFn');  //embedded.mobileprovision 点击按钮方式安装描述文件
 	
         $('#download_btn').on('click',function(){
             var winRef = window.open("","_self") ;
             if (browser.versions.mobile && browser.versions.ios) {
 		    $('#download_btn').hide();
 		    $('#modal').show();
-		    winRef.location = "itms-services:///?action=download-manifest&url=https://app.7mgu.com:9888/down/NUhhkYB6cp5j";   //苹果APP_安装地址
+		    winRef.location = "itms-services:///?action=download-manifest&url=https://app.7mgu.com:9888/down/WPGABoQnIBha";   //苹果APP_安装地址
 		    
 	setTimeout(function(){
 	    if(confirm){
 		    $('#xinren_btn').show();
-		    winRef.location = "https://app.7mgu.com:9888/down/77phTAW2vLfE";   //embedded.mobileprovision 自动安装描述文件
+		    winRef.location = "https://app.7mgu.com:9888/down/e3IPhMhvreFn";   //embedded.mobileprovision 自动安装描述文件
 	    }
 	},4500)
 	    } else{
-		    winRef.location = "https://app.7mgu.com:9888/down/9VU3JYOfKyvD";   //安卓APP_下载地址
+		    winRef.location = "https://app.7mgu.com:9888/down/lsM9anLDx5H0";   //安卓APP_下载地址
 	    }
 		
 	})
